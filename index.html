@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IP Grabber Pro</title>
+  <style>
+    body { font-family: Arial; background: #111; color: #0f0; text-align: center; padding-top: 100px; }
+    input, button { padding: 10px; margin: 10px; background: #222; color: #0f0; border: none; }
+  </style>
+</head>
+<body>
+  <h1>IP Grabber PRO</h1>
+  <p>Enter Discord ID:</p>
+  <input type="text" id="userid" placeholder="e.g. 1234567890">
+  <br>
+  <button onclick="grabIP()">Grab IP</button>
+
+  <script>
+    function grabIP() {
+      let id = document.getElementById('userid').value;
+      if (id.trim() !== "") {
+        alert("Fetching IP for ID: " + id);
+        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+      }
+    }
+  </script>
+</body>
+</html>
